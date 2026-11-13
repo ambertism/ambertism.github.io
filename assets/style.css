@@ -1,0 +1,67 @@
+:root{
+  --bg:#0c0a09; --bg2:#151110; --card:#1b1614; --line:#2e2521;
+  --text:#f3ece7; --muted:#a39790; --ember:#ff6a2b; --ember2:#ffb347;
+  --radius:14px; --max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background-image:radial-gradient(900px 500px at 80% -10%,rgba(255,106,43,.16),transparent 60%),radial-gradient(700px 400px at -10% 30%,rgba(255,179,71,.07),transparent 60%);
+  background-repeat:no-repeat}
+a{color:var(--ember2);text-decoration:none}
+a:hover{color:var(--ember)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);background:rgba(12,10,9,.72);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-weight:800;letter-spacing:.04em;color:var(--text);display:flex;align-items:center;gap:10px}
+.logo i{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--ember2),var(--ember));box-shadow:0 0 14px var(--ember)}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:.92rem}
+.nav ul a{color:var(--muted)}
+.nav ul a:hover{color:var(--text)}
+
+/* hero */
+.hero{padding:110px 0 90px}
+.eyebrow{font:600 .78rem/1 ui-monospace,Consolas,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--ember)}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.05;letter-spacing:-.02em;margin:18px 0 20px;max-width:14ch}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--ember2),var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);font-size:1.15rem;max-width:56ch}
+.cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;border:1px solid var(--line);color:var(--text);transition:.2s}
+.btn.primary{background:linear-gradient(135deg,var(--ember2),var(--ember));color:#1a0d05;border:0}
+.btn:hover{transform:translateY(-2px);color:var(--text)}
+.btn.primary:hover{color:#1a0d05;box-shadow:0 8px 28px rgba(255,106,43,.35)}
+
+/* sections */
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.01em;margin:10px 0 12px}
+.sub{color:var(--muted);max-width:60ch;margin-bottom:34px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.2s}
+.card:hover{border-color:#4a362c;transform:translateY(-3px)}
+.card h3{font-size:1.1rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.ico{font-size:1.6rem;margin-bottom:12px}
+.tag{display:inline-block;font:500 .72rem ui-monospace,Consolas,monospace;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin:10px 6px 0 0}
+
+/* team cards */
+.person{display:flex;flex-direction:column;gap:6px;color:var(--text)}
+.person:hover{color:var(--text)}
+.avatar{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:1.3rem;color:#1a0d05;background:linear-gradient(135deg,var(--ember2),var(--ember));margin-bottom:10px}
+.role{color:var(--ember);font:600 .78rem ui-monospace,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase}
+.go{margin-top:10px;font-weight:600;color:var(--ember2)}
+
+/* portfolio pages */
+.wrap.phead{padding:80px 20px 40px}
+.back{font-size:.9rem;color:var(--muted)}
+.list{display:grid;gap:14px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 24px}
+.item h3{font-size:1.05rem}
+.item .meta{color:var(--ember);font:500 .78rem ui-monospace,Consolas,monospace;margin-bottom:6px}
+.item p{color:var(--muted);font-size:.95rem}
+
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:620px){.nav ul{gap:14px;font-size:.85rem}.hero{padding:70px 0 60px}}
