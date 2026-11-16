@@ -5,7 +5,7 @@ Static site for **emberCAP** (embercap.us): a homepage plus a portfolio subpage 
 ```
 index.html                     homepage
 assets/style.css               shared styles
-members/member-one/index.html  portfolio pages (rename folders to real names)
+members/amber-c/index.html  portfolio pages (rename folders to real names)
 members/member-two/index.html
 members/member-three/index.html
 ```
