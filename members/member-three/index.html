@@ -1,43 +1,148 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Member Three — emberCAP</title>
 <link rel="stylesheet" href="../../assets/style.css">
+<script>document.documentElement.className+=' js'</script>
 </head>
 <body>
 <header class="nav"><div class="wrap">
   <a class="logo" href="../../"><i></i>emberCAP</a>
   <ul><li><a href="../../#services">Services</a></li><li><a href="../../#builds">Builds</a></li><li><a href="../../#team">Team</a></li><li><a href="../../#contact">Contact</a></li></ul>
 </div></header>
+
 <main>
-<div class="wrap phead">
+<!-- HOME / LANDING (bold title + graphic) -->
+<section class="pf-hero"><div class="wrap">
   <a class="back" href="../../#team">← Back to emberCAP</a>
-  <div class="avatar" style="margin-top:28px">C</div>
-  <div class="eyebrow">Co-founder</div>
-  <h1 style="font-size:clamp(2rem,5vw,3.4rem)">Member Three</h1>
-  <p class="lead">A short bio goes here: background, what you focus on, and what you're curious about.</p>
-</div>
-<section><div class="wrap">
-  <div class="eyebrow">Research</div><h2>Research &amp; projects</h2>
-  <div class="list">
-    <div class="item"><div class="meta">2026 · Paper / Project</div><h3>Research title placeholder</h3><p>One or two sentences on the question, method, and result. Link to the paper or repo.</p></div>
-    <div class="item"><div class="meta">2025 · Project</div><h3>Another project</h3><p>Short description.</p></div>
+  <div class="row" style="margin-top:24px">
+    <div class="avatar">C</div>
+    <div>
+      <div class="eyebrow">Portfolio · Co-founder, emberCAP</div>
+      <h1 style="font-size:clamp(2.4rem,7vw,5rem)">Member Three</h1>
+      <p class="lead">One bold sentence about your project or focus. What you're researching or building, and why it matters.</p>
+    </div>
   </div>
 </div></section>
-<section><div class="wrap">
-  <div class="eyebrow">Professional</div><h2>Experience &amp; skills</h2>
+
+<nav class="tabs" aria-label="Portfolio sections"><div class="wrap" role="tablist">
+  <button role="tab" data-tab="about">About Me</button>
+  <button role="tab" data-tab="work">Past Work</button>
+  <button role="tab" data-tab="process">Process</button>
+  <button role="tab" data-tab="research">Research</button>
+  <button role="tab" data-tab="results">Results</button>
+  <button role="tab" data-tab="gallery">Gallery</button>
+  <button role="tab" data-tab="reflection">Reflection</button>
+</div></nav>
+
+<!-- 1. ABOUT ME  (Personal) -->
+<section class="panel" id="about"><div class="wrap">
+  <span class="cat">Personal</span><h2>About Me</h2>
+  <div class="two">
+    <div>
+      <p>Brief bio: who you are, your background, and what you do at emberCAP.</p>
+      <p>Your areas of expertise and what you're working toward.</p>
+      <h3 class="sec">Fun facts</h3>
+      <ul class="facts"><li>Fun fact one</li><li>Fun fact two</li><li>Fun fact three</li></ul>
+      <h3 class="sec">Contact</h3>
+      <p><a href="mailto:embercappcs@gmail.com">embercappcs@gmail.com</a> · <a href="#">LinkedIn</a> · <a href="#">GitHub</a></p>
+    </div>
+    <div><div class="photo">Professional photo<br>(add image)</div></div>
+  </div>
+</div></section>
+
+<!-- 2. PAST WORK / RESUME  (Personal) -->
+<section class="panel" id="work"><div class="wrap">
+  <span class="cat">Personal</span><h2>Past Work &amp; Résumé</h2>
   <div class="list">
     <div class="item"><div class="meta">2024 – Present</div><h3>Role, Organization</h3><p>What you did and what it achieved.</p></div>
+    <div class="item"><div class="meta">2023 – 2024</div><h3>Previous role or project</h3><p>Short description.</p></div>
   </div>
+  <h3 class="sec">Skills</h3>
   <span class="tag">Skill</span><span class="tag">Skill</span><span class="tag">Skill</span>
+  <p style="margin-top:22px"><a class="btn" href="#">Download résumé (PDF)</a></p>
 </div></section>
-<section><div class="wrap">
-  <div class="eyebrow">Links</div><h2>Find me</h2>
-  <a class="btn" href="#">GitHub</a> <a class="btn" href="#">LinkedIn</a> <a class="btn" href="#">Résumé (PDF)</a>
+
+<!-- 3. PROCESS: ideation, timeline  (Process) -->
+<section class="panel" id="process"><div class="wrap">
+  <span class="cat">Process</span><h2>Process</h2>
+  <h3 class="sec" style="margin-top:0">Ideation</h3>
+  <p>How the idea started, the problem you wanted to solve, and the options you considered. Add a concept map image below.</p>
+  <div class="shot" style="margin-top:14px">Concept map (add image)</div>
+  <h3 class="sec">Timeline</h3>
+  <ul class="timeline">
+    <li><b>Month Year — Milestone</b><span class="cap">What happened.</span></li>
+    <li><b>Month Year — Milestone</b><span class="cap">What happened.</span></li>
+    <li><b>Month Year — Milestone</b><span class="cap">What happened.</span></li>
+  </ul>
+</div></section>
+
+<!-- 4. RESEARCH: background lit, methodology  (Process) -->
+<section class="panel" id="research"><div class="wrap">
+  <span class="cat">Process</span><h2>Research</h2>
+  <h3 class="sec" style="margin-top:0">Background literature</h3>
+  <div class="list">
+    <div class="item"><div class="meta">Author, Year</div><h3>Source title</h3><p>One-line takeaway and how it shaped your work.</p></div>
+    <div class="item"><div class="meta">Author, Year</div><h3>Source title</h3><p>One-line takeaway.</p></div>
+  </div>
+  <h3 class="sec">Methodology</h3>
+  <p>What you did, how you measured it, and why you chose that approach.</p>
+</div></section>
+
+<!-- 5. RESULTS: results, data, iteration  (Product) -->
+<section class="panel" id="results"><div class="wrap">
+  <span class="cat">Product</span><h2>Results</h2>
+  <p>Summary of what you made or found.</p>
+  <h3 class="sec">Data</h3>
+  <table class="table"><tr><th>Trial / Version</th><th>Measure</th><th>Result</th></tr>
+    <tr><td>1</td><td>—</td><td>—</td></tr><tr><td>2</td><td>—</td><td>—</td></tr></table>
+  <h3 class="sec">Iteration</h3>
+  <p>What you changed between versions and what improved.</p>
+</div></section>
+
+<!-- 6. GALLERY: pictures, poster  (Product) -->
+<section class="panel" id="gallery"><div class="wrap">
+  <span class="cat">Product</span><h2>Gallery</h2>
+  <div class="shots">
+    <figure><div class="shot">Image / video</div><figcaption class="cap">Caption: what this shows and your role.</figcaption></figure>
+    <figure><div class="shot">Image / video</div><figcaption class="cap">Caption.</figcaption></figure>
+    <figure><div class="shot">Poster</div><figcaption class="cap">Caption.</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- 7. REFLECTION: reflection, inspiration, impact  (Perspective) -->
+<section class="panel" id="reflection"><div class="wrap">
+  <span class="cat">Perspective</span><h2>Reflection</h2>
+  <h3 class="sec" style="margin-top:0">What I learned</h3>
+  <p>Challenges, mistakes, and what you'd do differently.</p>
+  <h3 class="sec">Inspiration &amp; empathy</h3>
+  <p>Who or what inspired the work, and who it's for.</p>
+  <h3 class="sec">Impact potential</h3>
+  <p>Where this could go next and who it could help.</p>
+  <h3 class="sec">Journal</h3>
+  <div class="list"><div class="item"><div class="meta">Date</div><p>Short journal entry.</p></div></div>
 </div></section>
 </main>
+
 <footer><div class="wrap"><span>© 2026 emberCAP</span><a href="../../">embercap.us</a></div></footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tabs [data-tab]'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  function show(id){
+    if(!document.getElementById(id)) id='about';
+    panels.forEach(function(p){p.hidden = p.id!==id});
+    tabs.forEach(function(t){t.setAttribute('aria-selected', t.dataset.tab===id)});
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    history.replaceState(null,'','#'+t.dataset.tab); show(t.dataset.tab);
+  })});
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1))});
+  show(location.hash.slice(1));
+})();
+</script>
 </body>
 </html>
